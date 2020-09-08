@@ -1,0 +1,45 @@
+.form {
+    padding-top: 30px;
+    font-family: "raleway", sans-serif;
+    z-index: -1;
+}
+
+.form-item-container {
+    text-align: center;
+    padding-bottom: 5px;
+}
+
+.form.in-view {
+    animation: popIn 2s ease forwards;
+}
+
+.form-item-container textarea {
+    width: 40vw;
+    height: 20vh;
+}
+
+.message-input {
+    background: #1e242c;
+    font-size: 1.15rem;
+    color: white;
+    border: 0px;
+    width: 40vw;
+    height: 3vh;
+    padding: 2px;
+}
+
+.text-center {
+    text-align: center;
+}
+
+#submit {
+    /* margin-right: 30vw; */
+    /* margin: 0px auto !important; */
+    font-size: 0.9rem;
+    background: #1e242c;
+    border: 0px solid;
+    padding: 5px;
+    border-radius: 6px;
+    color: #e31b6d;
+    font-family: "Acme", sans-serif;
+}

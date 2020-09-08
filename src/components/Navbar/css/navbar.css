@@ -1,0 +1,53 @@
+nav {
+    font-family: "raleway";
+    position: sticky;
+    top: 0;
+    border-bottom: #ff4444;
+    background-color: #222;
+    text-align: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    z-index: 2000;
+}
+
+
+/* nav.in-view{
+    -webkit-backface-visibility: hidden;
+    animation-name: popDown;
+    animation-duration: 1s;
+} */
+
+.page-link {
+    font-size: 1.5rem;
+    padding: 10px;
+    flex-grow: 1;
+    color: #8addf7;
+    padding: 11px 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 60px;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    padding: 20px 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.active {
+    background-color: #ff4444;
+    color: white;
+}

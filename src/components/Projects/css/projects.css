@@ -1,0 +1,115 @@
+.project-card-container {
+    /* border: 2px solid; */
+    min-height: 100vh;
+    margin-top: 0px !important;
+    /* margin-top: 5vh; */
+    margin-left: 10vw;
+    margin-right: 10vw;
+    /* padding: 40px; */
+    overflow-y: hidden;
+    display: flex;
+    flex-wrap: wrap;
+    column-count: 2;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+#projects {
+    background-color: #f5f5f5;
+}
+
+.header {
+    padding-top: 60px;
+    padding-bottom: 4px;
+    display: block;
+    text-align: center;
+    font-size: 3.2rem;
+    color: #222;
+    border-bottom: #111;
+    font-family: monoton;
+    margin-top: 0;
+}
+
+header.in-view {
+    animation-name: slideInLeft;
+    animation-duration: 2.5s;
+}
+
+.project-image-container {
+    position: relative;
+    transition: 2s ease;
+    margin: 20px;
+}
+
+.project-card-container {
+    text-align: center !important;
+}
+
+.project-card-container img {
+    /* margin:3px; */
+    margin-top: 0px;
+    height: 33vh;
+    width: 30vw;
+    border-radius: 0px;
+    padding: 0px;
+    transition: 2s ease;
+    /* margin: 8px 15px;s */
+}
+
+.project-image-text {
+    margin-top: 0px;
+    height: 33vh;
+    width: 30vw;
+    background: white;
+    border-radius: 0px;
+    padding: 0px;
+    position: absolute;
+    top: 0;
+    opacity: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+}
+
+.project-image-container:hover img {
+    opacity: 0;
+    cursor: pointer;
+}
+
+.project-image-container:hover .project-image-text {
+    cursor: pointer;
+    opacity: 1;
+    animation: popIn 1.5s forwards;
+}
+
+.project-image-text span:nth-child(1) {
+    padding-top: 21px;
+    font-family: raleway;
+    font-weight: bolder;
+    font-size: 1.7rem;
+}
+
+.project-image-text span:nth-child(2) {
+    padding-top: 4px;
+    font-family: raleway;
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: #e31b6d;
+}
+
+.project-image-text a {
+    display: block;
+    margin-top: 70px;
+    text-decoration: none;
+    color: #252934;
+    font-family: Raleway;
+    font-size: 1.1rem;
+    padding: 7px 20px;
+    font-weight: bold;
+    border: 2px solid #e31b6d;
+}
+
+.project-card-container img.in-view {
+    animation: flipInX 2s forwards;
+}

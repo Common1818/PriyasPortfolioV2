@@ -1,0 +1,35 @@
+.contact {
+    height: 80vh;
+    width: 100vw;
+    overflow-y: auto;
+    background: #252934;
+    z-index: 1;
+    /* z-index: 1; */
+}
+
+.contact-heading {
+    font-family: "Monoton", cursive;
+    display: block;
+    text-align: center;
+    font-size: 2.5rem;
+    color: #8addf7;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.contact-heading.in-view {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.question.in-view {
+    animation: slideInLeft 1s ease forwards;
+}
+
+.question {
+    display: block;
+    font-size: 1.1rem;
+    font-family: "raleway", sans-serif;
+    text-align: center;
+    color: #04c2c9;
+    text-indent: 2;
+}
